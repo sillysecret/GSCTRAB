@@ -41,8 +41,12 @@ public class System {
         }
     }
 
-    public void buscaPelaDescricao() {
-        // gerar getter da descricao do item para realizar este metodo
+    public void buscaPelaDescricao(String descricao) {
+        for (int i = 0; i < pedidos.size(); i++) {
+            if (pedidos.get(i).getDescricao().equals(descricao)) {
+                out.println(pedidos.get(i));
+            }
+        }
     }
 
     public void visualizarDetalhesPedido() {
