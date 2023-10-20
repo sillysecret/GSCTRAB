@@ -2,6 +2,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import static java.lang.System.out;
+
 
 public class System {
 
@@ -16,7 +18,7 @@ public class System {
                 && pedidos.get(idx).getStatus().equals(Pedido.statusPedido.Pendente)) {
             pedidos.remove(idx);
         } else {
-            System.out.println("Index inválido ou não é o solicitante do pedido.");
+            out.println("Index inválido ou não é o solicitante do pedido.");
         }
     }
 
@@ -25,7 +27,7 @@ public class System {
         for (int i = 0; i < datas.size(); i++) {
             for (Pedido pedido : pedidos) {
                 if (pedido.getData().equals(datas.get(i))) {
-                    System.out.println(datas.get(i));
+                    out.println(datas.get(i));
                 }
             }
         }
@@ -34,7 +36,7 @@ public class System {
     public void buscaPedidoDoFuncionario(Funcionario f) {
         for (int i = 0; i < pedidos.size(); i++) {
             if (pedidos.get(i).getSolicitante().equals(f)) {
-                System.out.println(pedidos.get(i));
+                out.println(pedidos.get(i));
             }
         }
     }
@@ -44,7 +46,7 @@ public class System {
     }
 
     public void visualizarDetalhesPedido() {
-        System.out.println(pedidos.toString());
+        out.println(pedidos.toString());
     }
 
     public void relatorioDados() {
@@ -97,7 +99,7 @@ public class System {
         media = media / pedidosTrintaDias.size();
 
 
-        System.out.println("num Total de Pedidos: " + totalPedidos + " | " );
+        out.println("num Total de Pedidos: " + totalPedidos + " | " );
     }
 
     private List<Pedido> pedidosUltimosTrintaDias(LocalDate trintaDiasAntes, LocalDate hoje) {

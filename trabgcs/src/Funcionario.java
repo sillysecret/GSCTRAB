@@ -15,4 +15,8 @@ public class Funcionario {
         Funcionario, 
         Administrador
      }
+
+     public Tipofunc getTipo(){
+        return this.Tipo;
+     }
 }

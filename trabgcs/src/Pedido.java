@@ -33,13 +33,17 @@ public class Pedido {
 
     }
 
-    public boolean avaliarPedido(Administrador admin, statusPedido status) {
+    public boolean avaliarPedido(Funcionario fun, statusPedido status) {
+       if(fun.getTipo().ordinal()==1){ 
         if (status.equals(statusPedido.Rejeitado)) {
             // LOGICA
             return false;
         } else {
             this.status = status;
             return true;
+        }
+        }else{
+            return false;
         }
     }
 
