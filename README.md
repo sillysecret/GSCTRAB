@@ -71,4 +71,4 @@ Correção de bug:
         - Valor total de cada categoria nos últimos 30 dias
         - Detalhes do pedido de aquisição de maior valor ainda aberto
      
-       | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/128426379?v=4" width=115><br>](https://github.com/sillysecret) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/80399994?v=4" width=115><br>](https://github.com/guilhermedsa)  | [<img loading="lazy" src="[https://avatars.githubusercontent.com/u/80399994?v=4](https://avatars.githubusercontent.com/u/22755800?v=4)https://avatars.githubusercontent.com/u/22755800?v=4" width=115><br>](https://github.com/luizmoraesaf)  
+        [<img loading="lazy" src="https://avatars.githubusercontent.com/u/128426379?v=4" width=115><br>](https://github.com/sillysecret)  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/80399994?v=4" width=115><br>](https://github.com/guilhermedsa)   [<img loading="lazy" src="https://avatars.githubusercontent.com/u/22755800?v=4" width=115><br>](https://github.com/luizmoraesaf)  
