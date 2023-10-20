@@ -13,12 +13,15 @@ public class Pedido {
     private int mesConclusao;
     private int anoConclusao;
     private LocalDate data;
+    private String descricao;
 
     private double valorPedido;
     private List<Item> itens = new ArrayList<Item>();
 
-    public Pedido(Funcionario solicitante, Departamento departamento, int diaAberto, int mesAberto, int anoAberto) {
+    public Pedido(Funcionario solicitante, Departamento departamento, String descricao, int diaAberto, int mesAberto,
+            int anoAberto) {
 
+        this.descricao = descricao;
         this.diaAberto = diaAberto;
         this.mesAberto = mesAberto;
         this.anoAberto = anoAberto;
@@ -58,6 +61,10 @@ public class Pedido {
     }
 
     // GETTERS
+
+    public String getDescricao() {
+        return descricao;
+    }
 
     public Funcionario getSolicitante() {
         return solicitante;
@@ -140,13 +147,11 @@ public class Pedido {
         Pendente
     }
 
-    // ToString
     @Override
     public String toString() {
         return "Pedido [solicitante=" + solicitante + ", departamento=" + departamento + ", status=" + status
                 + ", diaAberto=" + diaAberto + ", mesAberto=" + mesAberto + ", anoAberto=" + anoAberto
                 + ", diaConclusao=" + diaConclusao + ", mesConclusao=" + mesConclusao + ", anoConclusao=" + anoConclusao
-                + ", valorPedido=" + valorPedido + ", itens=" + itens + "]";
-
+                + ", data=" + data + ", valorPedido=" + valorPedido + ", itens=" + itens + "]";
     }
 }
