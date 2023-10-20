@@ -1,4 +1,5 @@
 # GSCTRAB
+link para o docs:https://brpucrs-my.sharepoint.com/:w:/g/personal/j_kriger002_edu_pucrs_br/EX-pZtpJ6sJLuLQor21lKpsBZHxB_WGAPQkuv8h6COlqWQ
 
 ## Instruções para commit
 Utilizar a convenção de commit-lint:
