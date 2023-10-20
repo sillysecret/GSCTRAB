@@ -39,8 +39,12 @@ public class System {
         }
     }
 
-    public void buscaPelaDescricao() {
-        // gerar getter da descricao do item para realizar este metodo
+    public void buscaPelaDescricao(String descricao) {
+        for (Pedido pedido : pedidos) {
+            if (pedido.getDescricao().equals(descricao)) {
+                System.out.println(pedido);
+            }
+        }
     }
 
     public void visualizarDetalhesPedido() {
@@ -58,13 +62,12 @@ public class System {
         double valorTotalRejeitados = 0.0;
         String detalhesPedidoMaiorValor = "";
         double comparador = 0.0;
-        
 
         for (Pedido pedido : pedidos) {
 
-            if(pedido.getValorPedido() > comparador){
-             comparador = pedido.getValorPedido();
-             detalhesPedidoMaiorValor = pedido.toString();   
+            if (pedido.getValorPedido() > comparador) {
+                comparador = pedido.getValorPedido();
+                detalhesPedidoMaiorValor = pedido.toString();
             }
 
             detalhesPedidoMaiorValor = pedido.toString();
@@ -96,8 +99,7 @@ public class System {
         }
         media = media / pedidosTrintaDias.size();
 
-
-        System.out.println("num Total de Pedidos: " + totalPedidos + " | " );
+        System.out.println("num Total de Pedidos: " + totalPedidos + " | ");
     }
 
     private List<Pedido> pedidosUltimosTrintaDias(LocalDate trintaDiasAntes, LocalDate hoje) {
