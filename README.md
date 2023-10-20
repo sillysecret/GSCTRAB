@@ -70,3 +70,6 @@ Correção de bug:
         - Numero de pedidos nos últimos 30 dias e o valor médio
         - Valor total de cada categoria nos últimos 30 dias
         - Detalhes do pedido de aquisição de maior valor ainda aberto
+     
+       | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br>](https://github.com/sillysecret) |  [
+| :---: | :---: | :---: |
