@@ -99,7 +99,7 @@ public class System {
         media = media / pedidosTrintaDias.size();
 
 
-        out.println(" | num Total de Pedidos: " + totalPedidos + " | " );
+        out.println("num Total de Pedidos: " + totalPedidos + " | " );
     }
 
     private List<Pedido> pedidosUltimosTrintaDias(LocalDate trintaDiasAntes, LocalDate hoje) {
